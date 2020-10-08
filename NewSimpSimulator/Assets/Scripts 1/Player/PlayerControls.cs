@@ -158,6 +158,27 @@ public class PlayerControls : MonoBehaviour
                         }
                         break;
 
+                    case "CabinetDoor":
+                        if (hit.collider.gameObject.GetComponent<DrawerController>().CanBeInteractedWith())
+                        {
+                            hit.collider.gameObject.GetComponent<Animator>().SetTrigger("Interact");
+                        }
+                        break;
+
+                    case "MainDrawer":
+                        if (hit.collider.gameObject.GetComponent<DrawerController>().CanBeInteractedWith())
+                        {
+                            hit.collider.gameObject.GetComponent<Animator>().SetTrigger("Interact");
+                        }
+                        break;
+
+                    case "SmallLeftDrawer":
+                        if (hit.collider.gameObject.GetComponent<DrawerController>().CanBeInteractedWith())
+                        {
+                            hit.collider.gameObject.GetComponent<Animator>().SetTrigger("Interact");
+                        }
+                        break;
+
                 }
             }
         }
@@ -192,7 +213,7 @@ public class PlayerControls : MonoBehaviour
     {
         rotation.y += Input.GetAxis("Mouse X");
         rotation.x += -Input.GetAxis("Mouse Y");
-        rotation.x = Mathf.Clamp(rotation.x, -15f, 15f);
+        rotation.x = Mathf.Clamp(rotation.x, -30f, 30f);
         //transform.eulerAngles = new Vector2(0, rotation.y) * lookSpeed;
         Camera.main.transform.localRotation = Quaternion.Euler(rotation.x * lookSpeed, rotation.y * lookSpeed, 0);
     }
