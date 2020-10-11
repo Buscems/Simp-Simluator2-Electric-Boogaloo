@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts 1\TurnObjectsOnOff.cs" />
     <Compile Include="Assets\Scripts 1\UI\TwitchChat.cs" />
     <Compile Include="Assets\Scripts 1\Managers\MoneyManager.cs" />
+    <Compile Include="Assets\Scripts 1\Managers\Desk\DrawerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\Scripts 1\UI\UIInteractionLogic.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -106,13 +107,14 @@
     <Compile Include="Assets\Scripts 1\Managers\EGirlMoneyManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\Scripts 1\Managers\Desk\DrawerController.cs" />
+    <Compile Include="Assets\Scripts 1\ObjectOutline.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextFiles\usernames.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Outline.shader" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
