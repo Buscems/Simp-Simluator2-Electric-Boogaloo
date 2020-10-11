@@ -2,16 +2,16 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-NewSimpSimulator/[Ll]ibrary/
-NewSimpSimulator/[Tt]emp/
-NewSimpSimulator/[Oo]bj/
-NewSimpSimulator/[Bb]uild/
-NewSimpSimulator/[Bb]uilds/
-NewSimpSimulator/[Ll]ogs/
-NewSimpSimulator/[Mm]emoryCaptures/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
-!NewSimpSimulator/[Aa]ssets/**/*.meta
+!/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # /[Aa]ssets/AssetStoreTools*
