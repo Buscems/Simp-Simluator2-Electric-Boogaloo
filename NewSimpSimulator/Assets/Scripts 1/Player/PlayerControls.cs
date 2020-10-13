@@ -17,9 +17,11 @@ public class PlayerControls : MonoBehaviour
 
     private bool moveToWork;
     private bool moveToEGirl;
+    private bool moveToPhone;
     private bool moveToNeutral;
 
     bool atMonitor;
+    bool atPhone;
 
     [Header("Camera Positions")]
     public float cameraSpeed;
@@ -34,6 +36,9 @@ public class PlayerControls : MonoBehaviour
     public Vector3 eGirlComputerPos;
     public Quaternion eGirlComputerRot;
 
+    public Vector3 phonePos;
+    public Quaternion phoneRot;
+
     void Start()
     {
         Cursor.visible = false;
@@ -45,6 +50,14 @@ public class PlayerControls : MonoBehaviour
         if (canLook)
         {
             Look();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                lastPos = transform.position;
+                lastRot = transform.rotation;
+                cameraTimer = 0;
+                canLook = false;
+                moveToPhone = true;
+            }
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -66,6 +79,11 @@ public class PlayerControls : MonoBehaviour
         if (moveToEGirl)
         {
             GoToEGirlComputer();
+        }
+
+        if (moveToPhone)
+        {
+            GoToPhone();
         }
 
         if (moveToNeutral)
@@ -104,6 +122,22 @@ public class PlayerControls : MonoBehaviour
         {
             moveToEGirl = false;
             atMonitor = true;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
+    void GoToPhone()
+    {
+        if (transform.position != phonePos && cameraTimer < cameraSpeed)
+        {
+            transform.position = Vector3.Lerp(transform.position, phonePos, cameraTimer / cameraSpeed);
+            transform.rotation = Quaternion.Lerp(transform.rotation, phoneRot, cameraTimer / cameraSpeed);
+        }
+        else
+        {
+            moveToPhone = false;
+            atPhone = true;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
