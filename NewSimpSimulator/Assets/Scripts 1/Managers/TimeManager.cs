@@ -10,6 +10,7 @@ public class TimeManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI clockTime;
     [SerializeField] private TextMeshProUGUI clockDate;
+    [SerializeField] private TextMeshProUGUI phoneTime;
 
     [SerializeField] private TextMeshProUGUI clockDate2;
 
@@ -128,8 +129,9 @@ public class TimeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clockTime.text = (hour < 10 ? "0" + hour.ToString() : hour.ToString()) + ":" + (minute < 10 ? "0" + minute.ToString() : minute.ToString()) + (am ? "am" : "pm");
+        clockTime.text = (hour < 10 ? "0" + hour.ToString() : hour.ToString()) + ":" + (minute < 10 ? "0" + minute.ToString() : minute.ToString()) + (am ? "AM" : "PM");
         clockDate.text = dayInformationReference[dayOfTheWeek] + " " + monthInformationReference[month].monthName + " " + day.ToString();
+        phoneTime.text = (hour < 10 ? "0" + hour.ToString() : hour.ToString()) + ":" + (minute < 10 ? "0" + minute.ToString() : minute.ToString()) + (am ? "AM" : "PM");
 
         clockDate2.text = clockTime.text + "\n" + dayInformationReference[dayOfTheWeek] + "\n" + monthInformationReference[month].monthName + " " + day.ToString();
     }

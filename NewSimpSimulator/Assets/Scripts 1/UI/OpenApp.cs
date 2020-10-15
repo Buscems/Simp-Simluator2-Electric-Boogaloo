@@ -17,9 +17,19 @@ public class OpenApp : MonoBehaviour
 
     [SerializeField] private GameObject appToOpen;
 
+    [SerializeField] private bool isMobileDevice;
+
+    private Color originalColor;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (isMobileDevice)
+        {
+            originalColor = appButton.color;
+            return;
+        }
+
         appButton.color = new Color(0, 0, 0, 0);
     }
 
@@ -30,6 +40,12 @@ public class OpenApp : MonoBehaviour
 
         if (currentIdleTime < 0 && highlight == false)
         {
+            if (isMobileDevice)
+            {
+                appButton.color = originalColor;
+                return;
+            }             
+
             appButton.color = new Color(0, 0, 0, 0);
         }
        
