@@ -39,10 +39,15 @@ public class PlayerControls : MonoBehaviour
     public Vector3 phonePos;
     public Quaternion phoneRot;
 
+    public GameObject phone;
+    public Vector3 phoneStartPos;
+    public Vector3 phoneEndPos;
+
     void Start()
     {
         //Cursor.visible = false;
         //Cursor.lockState = CursorLockMode.Locked;
+        phone.SetActive(false);
     }
 
     void Update()
@@ -56,6 +61,7 @@ public class PlayerControls : MonoBehaviour
                 lastRot = transform.rotation;
                 cameraTimer = 0;
                 canLook = false;
+                phone.SetActive(true);
                 moveToPhone = true;
             }
         }
@@ -63,6 +69,7 @@ public class PlayerControls : MonoBehaviour
         {
             moveToEGirl = false;
             moveToWork = false;
+            moveToPhone = false;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             cameraTimer = 0;
@@ -129,10 +136,12 @@ public class PlayerControls : MonoBehaviour
 
     void GoToPhone()
     {
-        if (transform.position != phonePos && cameraTimer < cameraSpeed)
+        if (transform.rotation != phoneRot && cameraTimer < cameraSpeed)
         {
+            Debug.Log("Work yes?");
             transform.position = Vector3.Lerp(transform.position, phonePos, cameraTimer / cameraSpeed);
             transform.rotation = Quaternion.Lerp(transform.rotation, phoneRot, cameraTimer / cameraSpeed);
+            phone.transform.position = Vector3.Lerp(phone.transform.position, phoneEndPos, cameraTimer / cameraSpeed);
         }
         else
         {
@@ -150,10 +159,25 @@ public class PlayerControls : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, lastPos, cameraTimer / cameraSpeed);
             transform.rotation = Quaternion.Lerp(transform.rotation, lastRot, cameraTimer / cameraSpeed);
         }
+        else if(transform.rotation != lastRot && cameraTimer < cameraSpeed)
+        {
+            if (phone.activeSelf)
+            {
+                if (phone.transform.position != phoneStartPos)
+                {
+                    phone.transform.position = Vector3.Lerp(phone.transform.position, phoneStartPos, cameraTimer / cameraSpeed);
+                }
+                else
+                {
+                    phone.SetActive(false);
+                }
+            }
+        }
         else
         {
             moveToNeutral = false;
             atMonitor = false;
+            atPhone = false;
             canLook = true;
         }
     }

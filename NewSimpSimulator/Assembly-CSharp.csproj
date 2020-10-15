@@ -60,6 +60,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts 1\Applications\Bitminer\BitminerUpgrades.cs" />
+    <Compile Include="Assets\Scripts 1\Managers\AppManager.cs" />
     <Compile Include="Assets\Scripts 1\UI\OpenApp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts 1\Managers\MoneyManager.cs" />
     <Compile Include="Assets\Scripts 1\Managers\Desk\DrawerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Scripts 1\Managers\MessengerManager.cs" />
     <Compile Include="Assets\Scripts 1\UI\UIInteractionLogic.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -108,8 +110,6 @@
     <Compile Include="Assets\Scripts 1\Managers\EGirlMoneyManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\Scripts 1\Managers\MessengerManager.cs" />
-    <Compile Include="Assets\Scripts 1\Managers\AppManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

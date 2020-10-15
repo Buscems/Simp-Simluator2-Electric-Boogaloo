@@ -11424,8 +11424,11 @@ MonoBehaviour:
   workComputerRot: {x: 0, y: 0.14, z: 0, w: 1}
   eGirlComputerPos: {x: -2.673, y: 5.107, z: -9.963}
   eGirlComputerRot: {x: 0, y: -0.135, z: 0, w: 1}
-  phonePos: {x: -2.673, y: 5.107, z: -9.963}
-  phoneRot: {x: 0, y: 0.13378645, z: 0, w: -0.9910102}
+  phonePos: {x: -1.396, y: 5.249, z: -12.002}
+  phoneRot: {x: 0, y: 0, z: 0, w: 1}
+  phone: {fileID: 812421847}
+  phoneStartPos: {x: -1.446, y: 2.866, z: -10.401}
+  phoneEndPos: {x: -1.446, y: 5.224, z: -10.401}
 --- !u!95 &729837230
 Animator:
   serializedVersion: 3
@@ -12860,7 +12863,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812421847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.446, y: 5.224, z: -10.401}
+  m_LocalPosition: {x: -1.446, y: 2.866, z: -10.401}
   m_LocalScale: {x: 0.87882006, y: 1.5380943, z: 0.048606098}
   m_Children:
   - {fileID: 1628516854}
