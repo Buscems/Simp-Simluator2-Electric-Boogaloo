@@ -27,6 +27,6 @@ public class Donate : MonoBehaviour
 
     public void OnClick()
     {
-        moneyManager.DonateMoney(cost, perkIndex);
+        moneyManager.DonateMoney(cost, perkIndex, "E-Girl Donation");
     }
 }

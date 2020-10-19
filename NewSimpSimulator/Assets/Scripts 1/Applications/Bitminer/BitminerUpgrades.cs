@@ -9,9 +9,10 @@ public class BitminerUpgrades : MonoBehaviour
 
     [SerializeField] private float upgradeCost;
     [SerializeField] private float moneyPerDayIncrease;
+    [SerializeField] private string transactionName;
 
     public void OnClick()
     {
-        moneyManager.UpgradeBitMiner(upgradeCost, moneyPerDayIncrease);
+        moneyManager.UpgradeBitMiner(upgradeCost, moneyPerDayIncrease, transactionName);
     }
 }

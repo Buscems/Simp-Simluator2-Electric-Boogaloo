@@ -80,7 +80,7 @@ public class CookieClickerButtonLogic : MonoBehaviour
     {
         if (currentUpgradeIndex == buttonUpgrades.Length) return;
 
-        if (moneyManager.Purchase(buttonUpgrades[currentUpgradeIndex].upgradeCost))
+        if (moneyManager.Purchase(buttonUpgrades[currentUpgradeIndex].upgradeCost, "Simp Clicker Upgrade"))
         {
             currentClickTime = 0;
             currentMoneyPerClickAmount = buttonUpgrades[currentUpgradeIndex].moneyPerClickAmount;
