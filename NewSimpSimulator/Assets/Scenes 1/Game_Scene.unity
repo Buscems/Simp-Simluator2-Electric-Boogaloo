@@ -23344,6 +23344,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sophie V2 (With Hood)
       objectReference: {fileID: 0}
+    - target: {fileID: 1390571897798376, guid: 2b74348ce0bfe114c99ce593976b9176, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541878894703192, guid: 2b74348ce0bfe114c99ce593976b9176, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557028673787196, guid: 2b74348ce0bfe114c99ce593976b9176, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1704481307523794, guid: 2b74348ce0bfe114c99ce593976b9176, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4389763152101762, guid: 2b74348ce0bfe114c99ce593976b9176, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.007352155

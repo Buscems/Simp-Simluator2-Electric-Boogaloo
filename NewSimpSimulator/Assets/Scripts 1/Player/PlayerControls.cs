@@ -138,7 +138,6 @@ public class PlayerControls : MonoBehaviour
     {
         if (transform.rotation != phoneRot && cameraTimer < cameraSpeed)
         {
-            Debug.Log("Work yes?");
             transform.position = Vector3.Lerp(transform.position, phonePos, cameraTimer / cameraSpeed);
             transform.rotation = Quaternion.Lerp(transform.rotation, phoneRot, cameraTimer / cameraSpeed);
             phone.transform.position = Vector3.Lerp(phone.transform.position, phoneEndPos, cameraTimer / cameraSpeed);
