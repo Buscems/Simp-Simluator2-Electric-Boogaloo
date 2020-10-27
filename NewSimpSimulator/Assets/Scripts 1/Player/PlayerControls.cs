@@ -172,9 +172,11 @@ public class PlayerControls : MonoBehaviour
                     phone.SetActive(false);
                 }
             }
+            transform.rotation = Quaternion.Lerp(transform.rotation, lastRot, cameraTimer / cameraSpeed);
         }
         else
         {
+            phone.SetActive(false);
             moveToNeutral = false;
             atMonitor = false;
             atPhone = false;
