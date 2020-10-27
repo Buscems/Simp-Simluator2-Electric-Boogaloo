@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 2560
     height: 1357
   m_ShowMode: 4
-  m_Title: Animator
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1357
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 809, y: 492}
   m_MaxSize: {x: 22004, y: 14042}
   vertical: 0
-  controlID: 12737
+  controlID: 175
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 533, y: 492}
   m_MaxSize: {x: 18003, y: 14042}
   vertical: 1
-  controlID: 12738
+  controlID: 181
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1845
     height: 881
-  m_MinSize: {x: 303, y: 221}
+  m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 12739
+  controlID: 182
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -218,15 +218,15 @@ MonoBehaviour:
     y: 0
     width: 1460
     height: 881
-  m_MinSize: {x: 102, y: 121}
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  m_Selected: 2
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_MinSize: {x: 533, y: 271}
   m_MaxSize: {x: 18003, y: 10021}
   vertical: 0
-  controlID: 11343
+  controlID: 213
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 192}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 11282
+  controlID: 176
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -525,9 +525,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c0a00000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f0a3fefff6a3feff84a4feff94a4feffa2a4feffb2a4fefff0a7feffbeacfeffc0acfefff22dffff8630ffff9230ffffa630ffffac30ffff3a31ffff4a31ffff5831ffff6831ffff5e7cffff767cffff787cffff94910000cc91000024930000a4940000ca94000010950000fa950000109600002096000022980000de980000ec980000629b0000
+      m_ExpandedIDs: 60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -587,9 +587,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.3697605, y: 11.784275, z: -29.245708}
+    m_Target: {x: -2.9689515, y: 8.293314, z: 9.81153}
     speed: 2
-    m_Value: {x: 11.3697605, y: 11.784275, z: -29.245708}
+    m_Value: {x: -2.9689515, y: 8.293314, z: 9.81153}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -636,13 +636,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0066472585, y: 0.9933059, z: -0.10500354, w: -0.06446717}
+    m_Target: {x: 0.1128802, y: -0.14589459, z: 0.017183483, w: 0.98375106}
     speed: 2
-    m_Value: {x: -0.0067983596, y: 0.99227446, z: -0.10489476, w: -0.06589505}
+    m_Value: {x: 0.11278814, y: -0.14426821, z: 0.016996406, w: 0.98294294}
   m_Size:
-    m_Target: 3.5073776
+    m_Target: 5.4692736
     speed: 2
-    m_Value: 3.5073776
+    m_Value: 5.4692736
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -896,21 +896,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sophie V2 - Anime Style/Female Animations
+    - Assets/3D Models
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sophie V2 - Anime Style/Female Animations
+  - Assets/3D Models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\nickb\Documents\GitHub\Simp-Simluator2-Electric-Boogaloo\NewSimpSimulator
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 26a60000
-    m_LastClickedID: 42534
-    m_ExpandedIDs: 00000000e49c0000e69c000002a6000000ca9a3b
+    scrollPos: {x: 0, y: 67}
+    m_SelectedIDs: 82530000
+    m_LastClickedID: 21378
+    m_ExpandedIDs: 00000000785300007a5300009e53000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -938,7 +938,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e49c0000e69c000000ca9a3b
+    m_ExpandedIDs: 00000000785300007a530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 41136
+  m_LastSelectedObjectID: -4282
 --- !u!114 &24
 MonoBehaviour:
   m_ObjectHideFlags: 52
